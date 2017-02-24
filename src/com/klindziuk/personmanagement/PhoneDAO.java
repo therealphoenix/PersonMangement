@@ -35,11 +35,11 @@ public class PhoneDAO extends JDBCconnector {
 		return rowInserted;
 	}
 
-    public List<Phone> listAllPhones(int owner_id) throws SQLException {
+    public List<Phone> listAllPhones() throws SQLException {
         ArrayList<Phone> phones = new ArrayList<>();
 
 		//  WHERE `owner`=" + owner_id );
-		String sql = ("SELECT * FROM `phone` WHERE `owner`=" + owner_id );
+		String sql = ("SELECT * FROM `phone` ");
 
 		connect();
 

@@ -74,13 +74,10 @@ public class ControllerServlet extends HttpServlet {
 
 	private void listPerson(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException, ServletException {
-	List<Phone> listPhone = null;
-		List<Person> listPerson = personDAO.listAllPersons();
-		for(Person p : listPerson){
-			 listPhone = phoneDAO.listAllPhones(2);
-			p.setPhoneList(listPhone);
-			request.setAttribute("listPhone", listPhone);
-		}
+	List<Phone> listPhone = phoneDAO.listAllPhones();
+	List<Person> listPerson = personDAO.listAllPersons();
+
+		request.setAttribute("listPhone", listPhone);
 		request.setAttribute("listPerson", listPerson);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("PersonList.jsp");
 		dispatcher.forward(request, response);

@@ -35,7 +35,10 @@
                             <td><c:out value="${person.surname}" /></td>
                             <td><c:out value="${person.middlename}" /></td>
                             <td><c:forEach var="phone" items="${listPhone}">
-                             <c:out value="${phone.number}" /> <br>
+                                <c:if test="${phone.owner == person.id}">
+                                 <c:out value="${phone.number}" /> <br>
+                                    </c:if>
+
                          </c:forEach>
                     </td>
                         <td>
