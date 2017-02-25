@@ -32,7 +32,6 @@ public class Person {
 		this.name = name;
 		this.surname = surname;
 		this.middlename = middlename;
-
 	}
 
 	public int getId() {

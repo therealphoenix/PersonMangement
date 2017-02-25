@@ -13,6 +13,8 @@
         	<a href="new">Add New Person</a>
         	&nbsp;&nbsp;&nbsp;
         	<a href="list">Person List</a>
+            &nbsp;&nbsp;&nbsp;
+            <a href="insertPhone">Add phone</a>
         	
         </h2>
 	</center>

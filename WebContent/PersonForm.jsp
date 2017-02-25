@@ -61,15 +61,11 @@
                 </td>
             </tr>
 			<tr>
-				<th>Phone numbers: </th>
-				<td>
-					<a href="list">Add number</a>
 
-				</td>
 			</tr>
             <tr>
             	<td colspan="2" align="center">
-            		<input type="submit" value="Save" />
+            		<input type="submit" value="Add person" />
 					<br>
 					<a href="list">back to person list</a>
             	</td>

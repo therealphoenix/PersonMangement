@@ -78,6 +78,42 @@ public class PhoneDAO extends JDBCconnector {
 		return rowDeleted;
 	}
 
+	public boolean updatePhone(Phone phone) throws SQLException {
+		String sql = "UPDATE phone SET number = ?";
+		sql += " WHERE id = ?";
+		connect();
 
+		PreparedStatement statement = jdbcConnection.prepareStatement(sql);
+		statement.setString(1, phone.getNumber());
+		statement.setInt(2, phone.getId());
+
+		boolean rowUpdated = statement.executeUpdate() > 0;
+		statement.close();
+		disconnect();
+		return rowUpdated;
+	}
+
+	public Phone getPhone(int id, int owner_id) throws SQLException {
+		Phone phone = null;
+		String sql = "SELECT * FROM phone WHERE id = ?";
+
+		connect();
+
+		PreparedStatement statement = jdbcConnection.prepareStatement(sql);
+		statement.setInt(1, id);
+
+		ResultSet resultSet = statement.executeQuery();
+
+		if (resultSet.next()) {
+
+			String number = resultSet.getString("number");
+			phone = new Phone(id,owner_id,number);
+		}
+
+		resultSet.close();
+		statement.close();
+
+		return phone;
+	}
 
 }
