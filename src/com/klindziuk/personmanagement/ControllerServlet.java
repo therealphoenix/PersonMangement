@@ -107,7 +107,9 @@ public class ControllerServlet extends HttpServlet {
 	}
 
 	private void showNewPhoneForm(HttpServletRequest request, HttpServletResponse response)
-			throws ServletException, IOException {
+			throws ServletException, IOException, SQLException{
+		Person existingPerson = personDAO.getPerson(owner_id);
+		request.setAttribute("person", existingPerson);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("AddPhone.jsp");
 		dispatcher.forward(request, response);
 	}
@@ -126,8 +128,10 @@ public class ControllerServlet extends HttpServlet {
 	private void showEditPhoneForm(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, ServletException, IOException {
 		int id = Integer.parseInt(request.getParameter("id"));
+		Person existingPerson = personDAO.getPerson(owner_id);
 		Phone existingPhone = phoneDAO.getPhone(id,owner_id);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("AddPhone.jsp");
+		request.setAttribute("person", existingPerson);
 		request.setAttribute("phone", existingPhone);
 		dispatcher.forward(request, response);
 

@@ -32,7 +32,9 @@
                     <input type="hidden" name="id" value="<c:out value='${phone.id}' />" />
                 </c:if>
                 <tr>
-                    <td colspan="2" align="center">person.name + person.surname + person.middlename</td>
+                    <th colspan="2" align="left"> Phone number owner : <c:out value="${person.name}" />
+                        <c:out value="${person.surname}" />
+                        <c:out value="${person.middlename}" /> </th>
                     <tr>
                     <th>Number: </th>
                     <td>
