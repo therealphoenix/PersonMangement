@@ -45,7 +45,15 @@
                     </td>
                 <tr>
                 <td colspan="2" align="center">
-                    <input type="submit" value="Add phone" />
+                    <input type="hidden" name="from" value="edit?id=${person.id}">
+                    <c:if test="${phone != null}">
+                        <input type="submit" value="Edit phone number" />
+                        </c:if>
+                        <c:if test="${phone == null}">
+                    <input type="submit" value="Add phone number" />
+                            </c:if>
+
+                    </form>
                     <br>
                     <a href="list">back to person information</a>
                 </td>

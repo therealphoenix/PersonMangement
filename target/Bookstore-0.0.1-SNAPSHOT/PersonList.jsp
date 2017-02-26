@@ -13,7 +13,7 @@
         	<a href="new">Add New Person</a>
         	&nbsp;&nbsp;&nbsp;
         	<a href="list">Person List</a>
-                   	
+
         </h2>
 	</center>
     <div align="center">

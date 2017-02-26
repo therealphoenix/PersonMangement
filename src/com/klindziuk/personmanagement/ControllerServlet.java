@@ -20,8 +20,8 @@ public class ControllerServlet extends HttpServlet {
 
 	private PersonDAO personDAO;
 	private PhoneDAO phoneDAO;
-	List<Person> listPerson;
-	private int owner_id;
+	private int owner_id;	//полукостыль
+	private String link2edit; //костыль!
 
 
 
@@ -127,6 +127,7 @@ public class ControllerServlet extends HttpServlet {
 	}
 	private void showEditPhoneForm(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, ServletException, IOException {
+
 		int id = Integer.parseInt(request.getParameter("id"));
 		Person existingPerson = personDAO.getPerson(owner_id);
 		Phone existingPhone = phoneDAO.getPhone(id,owner_id);
@@ -139,10 +140,10 @@ public class ControllerServlet extends HttpServlet {
 
 	private void insertPerson(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException {
+
 		String name = request.getParameter("name");
 		String surname = request.getParameter("surname");
 		String middlename = request.getParameter("middlename");
-
 		Person newPerson = new Person(name, surname, middlename);
 		personDAO.insertPerson(newPerson);
 		response.sendRedirect("list");
@@ -150,11 +151,12 @@ public class ControllerServlet extends HttpServlet {
 
 	private void insertPhone(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException {
-	//	owner_id = Integer.parseInt(request.getParameter("id"));
+
 		String number = request.getParameter("number");
 		Phone newPhone = new Phone(owner_id,number);
 		phoneDAO.insertPhone(newPhone,owner_id);
-		response.sendRedirect("list");
+		link2edit = request.getParameter("from");
+		response.sendRedirect(link2edit);
 	}
 
 	private void updatePerson(HttpServletRequest request, HttpServletResponse response)
@@ -176,7 +178,7 @@ public class ControllerServlet extends HttpServlet {
 
 		Phone phone = new Phone(id,owner_id, number);
 		phoneDAO.updatePhone(phone);
-		response.sendRedirect("list");
+		response.sendRedirect(request.getParameter("from"));
 	}
 
 	private void deletePerson(HttpServletRequest request, HttpServletResponse response)
@@ -194,7 +196,7 @@ public class ControllerServlet extends HttpServlet {
 
 		Phone phone = new Phone(id);
 		phoneDAO.deletePhone(phone);
-		response.sendRedirect("list");
+		response.sendRedirect(link2edit);
 	}
 
 }

@@ -35,6 +35,7 @@
                 </caption>
                 <c:if test="${person != null}">
                     <input type="hidden" name="id" value="<c:out value='${person.id}' />" />
+
                 </c:if>
                 <tr>
                     <th>Name: </th>
@@ -62,19 +63,18 @@
                 </tr>
 
                 <tr>
+
                     <th>Phone numbers:</th>
                     <td> <c:forEach var="phone" items="${listPhone}">
                     <c:if test="${phone.owner == person.id}">
                         <c:out value="${phone.number}" />
-                        <a href="editPhone?id=<c:out value='${phone.id}' />">Update</a>
+                        <a href="editPhone?id=<c:out value='${phone.id}' />">Edit</a>
                         &nbsp;&nbsp;&nbsp;
                         <a href="deletePhone?id=<c:out value='${phone.id}' />">Delete</a> <br>
                     </c:if>
 
                 </c:forEach>
                           <a href="newPhone">Add phone</a>
-
-
                     </td>
                 </tr>
                     <td colspan="2" align="center">
