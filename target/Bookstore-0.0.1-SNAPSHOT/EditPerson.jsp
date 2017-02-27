@@ -36,6 +36,7 @@
                 <c:if test="${person != null}">
                     <input type="hidden" name="id" value="<c:out value='${person.id}' />" />
 
+
                 </c:if>
                 <tr>
                     <th>Name: </th>
@@ -65,6 +66,7 @@
                 <tr>
 
                     <th>Phone numbers:</th>
+
                     <td> <c:forEach var="phone" items="${listPhone}">
                     <c:if test="${phone.owner == person.id}">
                         <c:out value="${phone.number}" />

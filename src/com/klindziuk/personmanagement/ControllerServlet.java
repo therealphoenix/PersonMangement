@@ -21,7 +21,7 @@ public class ControllerServlet extends HttpServlet {
 	private PersonDAO personDAO;
 	private PhoneDAO phoneDAO;
 	private int owner_id;	//полукостыль
-	private String link2edit; //костыль!
+
 
 
 
@@ -155,8 +155,8 @@ public class ControllerServlet extends HttpServlet {
 		String number = request.getParameter("number");
 		Phone newPhone = new Phone(owner_id,number);
 		phoneDAO.insertPhone(newPhone,owner_id);
-		link2edit = request.getParameter("from");
-		response.sendRedirect(link2edit);
+		//response.sendRedirect(request.getParameter("from"));
+		response.sendRedirect("http://localhost:8080/edit?id="+owner_id);
 	}
 
 	private void updatePerson(HttpServletRequest request, HttpServletResponse response)
@@ -178,7 +178,8 @@ public class ControllerServlet extends HttpServlet {
 
 		Phone phone = new Phone(id,owner_id, number);
 		phoneDAO.updatePhone(phone);
-		response.sendRedirect(request.getParameter("from"));
+		response.sendRedirect("http://localhost:8080/edit?id="+owner_id);
+	//	response.sendRedirect(request.getParameter("from"));
 	}
 
 	private void deletePerson(HttpServletRequest request, HttpServletResponse response)
@@ -196,7 +197,7 @@ public class ControllerServlet extends HttpServlet {
 
 		Phone phone = new Phone(id);
 		phoneDAO.deletePhone(phone);
-		response.sendRedirect(link2edit);
+		response.sendRedirect("http://localhost:8080/edit?id="+owner_id);
 	}
 
 }
