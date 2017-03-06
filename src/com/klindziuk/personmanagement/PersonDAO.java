@@ -16,28 +16,26 @@ import java.util.List;
  * @author www.codejava.net
  *
  */
-public class PersonDAO extends JDBCconnector{
-
+public class PersonDAO {
+		JDBCconnector connector;
 	
-	public PersonDAO(String jdbcURL, String jdbcUsername, String jdbcPassword)  {
-		this.jdbcURL = jdbcURL;
-		this.jdbcUsername = jdbcUsername;
-		this.jdbcPassword = jdbcPassword;
+	public PersonDAO()  {
+		connector = new JDBCconnector();
 
 	}
 
 	public boolean insertPerson(Person person) throws SQLException {
 		String sql = "INSERT INTO person (name, surname, middlename) VALUES (?, ?, ?)";
-		connect();
+		connector.connect();
 		
-		PreparedStatement statement = jdbcConnection.prepareStatement(sql);
+		PreparedStatement statement = connector.jdbcConnection.prepareStatement(sql);
 		statement.setString(1, person.getName());
 		statement.setString(2, person.getSurname());
 		statement.setString(3, person.getMiddlename());
 		
 		boolean rowInserted = statement.executeUpdate() > 0;
 		statement.close();
-		disconnect();
+		connector.disconnect();
 		return rowInserted;
 	}
 	
@@ -46,9 +44,9 @@ public class PersonDAO extends JDBCconnector{
 		
 		String sql = "SELECT * FROM person";
 		
-		connect();
+		connector.connect();
 		
-		Statement statement = jdbcConnection.createStatement();
+		Statement statement = connector.jdbcConnection.createStatement();
 		ResultSet resultSet = statement.executeQuery(sql);
 
 		while (resultSet.next()) {
@@ -64,7 +62,7 @@ public class PersonDAO extends JDBCconnector{
 		resultSet.close();
 		statement.close();
 		
-		disconnect();
+		connector.disconnect();
 		
 		return listPerson;
 	}
@@ -73,23 +71,23 @@ public class PersonDAO extends JDBCconnector{
 	public boolean deletePerson(Person person) throws SQLException {
 		String sql = "DELETE FROM person where id = ?";
 		
-		connect();
+		connector.connect();
 		
-		PreparedStatement statement = jdbcConnection.prepareStatement(sql);
+		PreparedStatement statement = connector.jdbcConnection.prepareStatement(sql);
 		statement.setInt(1, person.getId());
 		
 		boolean rowDeleted = statement.executeUpdate() > 0;
 		statement.close();
-		disconnect();
+		connector.disconnect();
 		return rowDeleted;		
 	}
 	
 	public boolean updatePerson(Person person) throws SQLException {
 		String sql = "UPDATE person SET name = ?, surname = ?, middlename = ?";
 		sql += " WHERE id = ?";
-		connect();
+		connector.connect();
 		
-		PreparedStatement statement = jdbcConnection.prepareStatement(sql);
+		PreparedStatement statement = connector.jdbcConnection.prepareStatement(sql);
 		statement.setString(1, person.getName());
 		statement.setString(2, person.getSurname());
 		statement.setString(3, person.getMiddlename());
@@ -97,7 +95,7 @@ public class PersonDAO extends JDBCconnector{
 		
 		boolean rowUpdated = statement.executeUpdate() > 0;
 		statement.close();
-		disconnect();
+		connector.disconnect();
 		return rowUpdated;		
 	}
 
@@ -105,9 +103,9 @@ public class PersonDAO extends JDBCconnector{
 		Person person = null;
 		String sql = "SELECT * FROM person WHERE id = ?";
 		
-		connect();
+		connector.connect();
 		
-		PreparedStatement statement = jdbcConnection.prepareStatement(sql);
+		PreparedStatement statement = connector.jdbcConnection.prepareStatement(sql);
 		statement.setInt(1, id);
 		
 		ResultSet resultSet = statement.executeQuery();

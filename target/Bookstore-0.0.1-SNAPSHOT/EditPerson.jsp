@@ -67,13 +67,11 @@
 
                     <th>Phone numbers:</th>
 
-                    <td> <c:forEach var="phone" items="${listPhone}">
-                    <c:if test="${phone.owner == person.id}">
+                    <td> <c:forEach var="phone" items="${listPersonPhone}">
                         <c:out value="${phone.number}" />
                         <a href="editPhone?id=<c:out value='${phone.id}' />">Edit</a>
                         &nbsp;&nbsp;&nbsp;
                         <a href="deletePhone?id=<c:out value='${phone.id}' />">Delete</a> <br>
-                    </c:if>
 
                 </c:forEach>
                           <a href="newPhone">Add phone</a>

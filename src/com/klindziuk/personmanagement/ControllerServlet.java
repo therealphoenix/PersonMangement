@@ -26,19 +26,15 @@ public class ControllerServlet extends HttpServlet {
 
 
 	public void init() {
-		String  jdbcURL = "jdbc:mysql://localhost:3306/phonebook";
-		String jdbcUsername = "root";
-		String jdbcPassword = "root";
+		personDAO = new PersonDAO();
+		phoneDAO  = new PhoneDAO();
 
-		personDAO = new PersonDAO(jdbcURL, jdbcUsername, jdbcPassword);
-		phoneDAO  = new PhoneDAO(jdbcURL, jdbcUsername, jdbcPassword);
-
-			}
+	}
 
 	protected void doPost(HttpServletRequest request, HttpServletResponse response)
 			throws ServletException, IOException {
 		request.setCharacterEncoding("UTF-8");
-	    doGet(request, response);
+		doGet(request, response);
 	}
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response)
@@ -48,40 +44,40 @@ public class ControllerServlet extends HttpServlet {
 
 		try {
 			switch (action) {
-			case "/new":
-				showNewForm(request, response);
-				break;
-			case "/insert":
-				insertPerson(request, response);
-				break;
-			case "/newPhone":
+				case "/new":
+					showNewForm(request, response);
+					break;
+				case "/insert":
+					insertPerson(request, response);
+					break;
+				case "/newPhone":
 					showNewPhoneForm(request, response);
-				break;
-			case "/insertPhone":
+					break;
+				case "/insertPhone":
 					insertPhone(request, response);
-				break;
-			case "/updatePhone":
-				 updatePhone(request,response);
-				break;
-			case "/editPhone":
+					break;
+				case "/updatePhone":
+					updatePhone(request,response);
+					break;
+				case "/editPhone":
 					showEditPhoneForm(request, response);
-				break;
-			case "/delete":
-				deletePerson(request, response);
-				break;
-			case "/deletePhone":
-				deletePhone(request, response);
-				break;
-			case "/edit":
-				showEditForm(request, response);
-				break;
-			case "/update":
-				updatePerson(request, response);
-				break;
-			default:
-				listPerson(request, response);
+					break;
+				case "/delete":
+					deletePerson(request, response);
+					break;
+				case "/deletePhone":
+					deletePhone(request, response);
+					break;
+				case "/edit":
+					showEditForm(request, response);
+					break;
+				case "/update":
+					updatePerson(request, response);
+					break;
+				default:
+					listPerson(request, response);
 
-				break;
+					break;
 			}
 		} catch (SQLException ex) {
 			throw new ServletException(ex);
@@ -90,11 +86,10 @@ public class ControllerServlet extends HttpServlet {
 
 	private void listPerson(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException, ServletException {
-	List<Phone> listPhone = phoneDAO.listAllPhones();
-	List<Person> listPerson = personDAO.listAllPersons();
-
+		List<Phone> listPhone = phoneDAO.listAllPhones();
+		List<Person> listPerson = personDAO.listAllPersons();
 		request.setAttribute("listPhone", listPhone);
-		request.setAttribute("listPerson", listPerson);
+    	request.setAttribute("listPerson", listPerson);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("PersonList.jsp");
 		dispatcher.forward(request, response);
 	}
@@ -118,8 +113,8 @@ public class ControllerServlet extends HttpServlet {
 			throws SQLException, ServletException, IOException {
 		owner_id = Integer.parseInt(request.getParameter("id"));
 		Person existingPerson = personDAO.getPerson(owner_id);
-		List<Phone> listPhone = phoneDAO.listAllPhones();
-		request.setAttribute("listPhone", listPhone);
+		List<Phone> listPersonPhone = phoneDAO.listPersonPhones(owner_id);
+		request.setAttribute("listPersonPhone", listPersonPhone);
 		RequestDispatcher dispatcher = request.getRequestDispatcher("EditPerson.jsp");
 		request.setAttribute("person", existingPerson);
 		dispatcher.forward(request, response);
@@ -135,9 +130,7 @@ public class ControllerServlet extends HttpServlet {
 		request.setAttribute("person", existingPerson);
 		request.setAttribute("phone", existingPhone);
 		dispatcher.forward(request, response);
-
 	}
-
 	private void insertPerson(HttpServletRequest request, HttpServletResponse response)
 			throws SQLException, IOException {
 
@@ -179,7 +172,7 @@ public class ControllerServlet extends HttpServlet {
 		Phone phone = new Phone(id,owner_id, number);
 		phoneDAO.updatePhone(phone);
 		response.sendRedirect("http://localhost:8080/edit?id="+owner_id);
-	//	response.sendRedirect(request.getParameter("from"));
+		//	response.sendRedirect(request.getParameter("from"));
 	}
 
 	private void deletePerson(HttpServletRequest request, HttpServletResponse response)

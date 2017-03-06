@@ -6,20 +6,35 @@
     </artifacts-to-build>
   </component>
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" line="203" />
-    <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" line="71" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" line="69" />
     <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" line="0" />
     <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" line="17" />
     <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" line="18" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" line="21" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" line="195" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java" line="11" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30df8f02-f6b8-41b2-9b8b-8b5509d6d3fa" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/WebContent/BookForm1.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/BookForm1.jsp" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/WEB-INF/classes/com/klindziuk/personmanagement/ControllerServlet.class" afterPath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/WEB-INF/classes/com/klindziuk/personmanagement/ControllerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/WEB-INF/classes/com/klindziuk/personmanagement/JDBCconnector.class" afterPath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/WEB-INF/classes/com/klindziuk/personmanagement/JDBCconnector.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/WEB-INF/classes/com/klindziuk/personmanagement/PersonDAO.class" afterPath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/WEB-INF/classes/com/klindziuk/personmanagement/PersonDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/WEB-INF/classes/com/klindziuk/personmanagement/PhoneDAO.class" afterPath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/WEB-INF/classes/com/klindziuk/personmanagement/PhoneDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/ControllerServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/ControllerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/JDBCconnector.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/JDBCconnector.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/PersonDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/PersonDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/PhoneDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/PhoneDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/EditPerson.jsp" afterPath="$PROJECT_DIR$/WebContent/EditPerson.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/EditPerson.jsp" afterPath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/EditPerson.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/Bookstore-0.0.1-SNAPSHOT/WEB-INF/web.xml" />
     </list>
     <ignored path="Bookstore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,35 +73,33 @@
       <file leaf-file-name="PersonDAO.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1785">
-              <caret line="112" column="55" selection-start-line="112" selection-start-column="55" selection-end-line="112" selection-end-column="55" />
+            <state relative-caret-position="204">
+              <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
               <folding>
-                <marker date="1487947057783" expanded="true" signature="734:797" placeholder="INSERT INTO book... " />
-                <marker date="1487947057783" expanded="true" signature="1275:1289" placeholder="SELECT * FRO... book" />
-                <marker date="1487947057783" expanded="true" signature="1275:1295" placeholder="SELECT * FRO... person" />
-                <marker date="1487947057783" expanded="true" signature="1919:1950" placeholder="DELETE FROM " />
-                <marker date="1487947057783" expanded="true" signature="2285:2340" placeholder="UPDATE book " />
-                <marker date="1487947057783" expanded="true" signature="2851:2884" placeholder="SELECT * FRO... book" />
+                <marker date="1488818056711" expanded="true" signature="620:683" placeholder="INSERT INTO book... " />
+                <marker date="1488818056711" expanded="true" signature="1191:1205" placeholder="SELECT * FRO... book" />
+                <marker date="1488818056711" expanded="true" signature="1191:1211" placeholder="SELECT * FRO... person" />
+                <marker date="1488818056711" expanded="true" signature="1865:1896" placeholder="DELETE FROM " />
+                <marker date="1488818056711" expanded="true" signature="2261:2316" placeholder="UPDATE book " />
+                <marker date="1488818056711" expanded="true" signature="2857:2890" placeholder="SELECT * FRO... book" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PhoneDAO.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="PhoneDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="122">
-              <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
+            <state relative-caret-position="-469">
+              <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <marker date="1487986898805" expanded="true" signature="635:682" placeholder="INSERT INTO phone... " />
-                <marker date="1487986898805" expanded="true" signature="1136:1156" placeholder="SELECT * FRO... phone" />
-                <marker date="1487986898805" expanded="true" signature="1136:1157" placeholder="SELECT * FRO... phone" />
-                <marker date="1487986898805" expanded="true" signature="1136:1158" placeholder="SELECT * FRO... phone" />
-                <marker date="1487986898805" expanded="true" signature="1136:1160" placeholder="SELECT * FRO... phone" />
-                <marker date="1487986898805" expanded="true" signature="1691:1721" placeholder="DELETE FROM " />
-                <marker date="1487986898805" expanded="true" signature="2043:2070" placeholder="UPDATE perso... " />
-                <marker date="1487986898805" expanded="true" signature="2488:2520" placeholder="SELECT * FRO... person" />
+                <marker date="1488827150987" expanded="true" signature="462:509" placeholder="INSERT INTO phone... " />
+                <marker date="1488827150987" expanded="true" signature="958:979" placeholder="SELECT * FRO... phone" />
+                <marker date="1488827150987" expanded="true" signature="1600:1635" placeholder="SELECT * FRO... phone" />
+                <marker date="1488827150987" expanded="true" signature="2229:2259" placeholder="DELETE FROM " />
+                <marker date="1488827150987" expanded="true" signature="2611:2638" placeholder="UPDATE perso... " />
+                <marker date="1488827150987" expanded="true" signature="3086:3118" placeholder="SELECT * FRO... person" />
               </folding>
             </state>
           </provider>
@@ -102,42 +115,14 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BookForm1.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/BookForm1.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1377">
-              <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ControllerServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ControllerServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="148" column="38" selection-start-line="148" selection-start-column="38" selection-end-line="148" selection-end-column="38" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="JDBCconnector.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="EditPerson.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/EditPerson.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="211">
-              <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="17">
+              <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -145,18 +130,8 @@
       <file leaf-file-name="PersonList.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/PersonList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="680">
               <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonForm.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/WebContent/PersonForm.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1139">
-              <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -165,8 +140,28 @@
       <file leaf-file-name="AddPhone.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/AddPhone.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="79">
-              <caret line="47" column="82" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="82" />
+            <state relative-caret-position="198">
+              <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="EditPerson.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/EditPerson.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="102">
+              <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PersonForm.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/WebContent/PersonForm.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
               <folding />
             </state>
           </provider>
@@ -177,8 +172,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="Jsp File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -193,7 +188,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/WebContent/BookForm.jsp" />
         <option value="$PROJECT_DIR$/WebContent/BookList.jsp" />
         <option value="$PROJECT_DIR$/src/net/codejava/javaee/bookstore/Book.java" />
@@ -207,16 +201,18 @@
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Main.java" />
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Connection.java" />
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDao.java" />
-        <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java" />
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Person.java" />
         <option value="$PROJECT_DIR$/WebContent/EditPhone.jsp" />
         <option value="$PROJECT_DIR$/WebContent/PersonForm.jsp" />
-        <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" />
-        <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java" />
         <option value="$PROJECT_DIR$/WebContent/PersonList.jsp" />
         <option value="$PROJECT_DIR$/WebContent/AddPhone.jsp" />
+        <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneServlet.java" />
+        <option value="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" />
+        <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java" />
         <option value="$PROJECT_DIR$/WebContent/EditPerson.jsp" />
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" />
+        <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java" />
       </list>
     </option>
   </component>
@@ -271,9 +267,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -918,12 +914,21 @@
       <updated>1487700461160</updated>
       <workItem from="1487700464215" duration="13695000" />
       <workItem from="1487842608774" duration="70922000" />
-      <workItem from="1488235946750" duration="2663000" />
+      <workItem from="1488235946750" duration="2737000" />
+      <workItem from="1488812563686" duration="7661000" />
     </task>
+    <task id="LOCAL-00001" summary="fixed delete redirect">
+      <created>1488238721269</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1488238721269</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="87280000" />
+    <option name="totallyTimeSpent" value="95015000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
@@ -939,7 +944,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32935154" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25964913" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1754386" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -965,6 +970,10 @@
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixed delete redirect" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed delete redirect" />
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
     <watches-manager />
@@ -974,17 +983,59 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/EditPerson.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/PersonList.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="680">
+          <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/PersonForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1139">
+          <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/AddPhone.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="799">
+          <caret line="47" column="82" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="82" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1785">
           <caret line="112" column="55" selection-start-line="112" selection-start-column="55" selection-end-line="112" selection-end-column="55" />
           <folding>
-            <marker date="1487947057783" expanded="true" signature="734:797" placeholder="INSERT INTO book... " />
-            <marker date="1487947057783" expanded="true" signature="1275:1289" placeholder="SELECT * FRO... book" />
-            <marker date="1487947057783" expanded="true" signature="1275:1295" placeholder="SELECT * FRO... person" />
-            <marker date="1487947057783" expanded="true" signature="1919:1950" placeholder="DELETE FROM " />
-            <marker date="1487947057783" expanded="true" signature="2285:2340" placeholder="UPDATE book " />
-            <marker date="1487947057783" expanded="true" signature="2851:2884" placeholder="SELECT * FRO... book" />
+            <marker date="1488818056711" expanded="true" signature="620:683" placeholder="INSERT INTO book... " />
+            <marker date="1488818056711" expanded="true" signature="1191:1205" placeholder="SELECT * FRO... book" />
+            <marker date="1488818056711" expanded="true" signature="1191:1211" placeholder="SELECT * FRO... person" />
+            <marker date="1488818056711" expanded="true" signature="1865:1896" placeholder="DELETE FROM " />
+            <marker date="1488818056711" expanded="true" signature="2261:2316" placeholder="UPDATE book " />
+            <marker date="1488818056711" expanded="true" signature="2857:2890" placeholder="SELECT * FRO... book" />
           </folding>
         </state>
       </provider>
@@ -995,14 +1046,12 @@
           <caret line="95" column="46" selection-start-line="95" selection-start-column="46" selection-end-line="95" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <marker date="1487986898805" expanded="true" signature="635:682" placeholder="INSERT INTO phone... " />
-            <marker date="1487986898805" expanded="true" signature="1136:1156" placeholder="SELECT * FRO... phone" />
-            <marker date="1487986898805" expanded="true" signature="1136:1157" placeholder="SELECT * FRO... phone" />
-            <marker date="1487986898805" expanded="true" signature="1136:1158" placeholder="SELECT * FRO... phone" />
-            <marker date="1487986898805" expanded="true" signature="1136:1160" placeholder="SELECT * FRO... phone" />
-            <marker date="1487986898805" expanded="true" signature="1691:1721" placeholder="DELETE FROM " />
-            <marker date="1487986898805" expanded="true" signature="2043:2070" placeholder="UPDATE perso... " />
-            <marker date="1487986898805" expanded="true" signature="2488:2520" placeholder="SELECT * FRO... person" />
+            <marker date="1488827150987" expanded="true" signature="462:509" placeholder="INSERT INTO phone... " />
+            <marker date="1488827150987" expanded="true" signature="958:979" placeholder="SELECT * FRO... phone" />
+            <marker date="1488827150987" expanded="true" signature="1600:1635" placeholder="SELECT * FRO... phone" />
+            <marker date="1488827150987" expanded="true" signature="2229:2259" placeholder="DELETE FROM " />
+            <marker date="1488827150987" expanded="true" signature="2611:2638" placeholder="UPDATE perso... " />
+            <marker date="1488827150987" expanded="true" signature="3086:3118" placeholder="SELECT * FRO... person" />
           </folding>
         </state>
       </provider>
@@ -1019,7 +1068,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1027,7 +1078,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1068,12 +1121,12 @@
         <state relative-caret-position="204">
           <caret line="19" column="27" selection-start-line="19" selection-start-column="27" selection-end-line="19" selection-end-column="27" />
           <folding>
-            <marker date="1487947057783" expanded="true" signature="734:797" placeholder="INSERT INTO book... " />
-            <marker date="1487947057783" expanded="true" signature="1275:1289" placeholder="SELECT * FRO... book" />
-            <marker date="1487947057783" expanded="true" signature="1275:1295" placeholder="SELECT * FRO... person" />
-            <marker date="1487947057783" expanded="true" signature="1919:1950" placeholder="DELETE FROM " />
-            <marker date="1487947057783" expanded="true" signature="2285:2340" placeholder="UPDATE book " />
-            <marker date="1487947057783" expanded="true" signature="2851:2884" placeholder="SELECT * FRO... book" />
+            <marker date="1488818056711" expanded="true" signature="620:683" placeholder="INSERT INTO book... " />
+            <marker date="1488818056711" expanded="true" signature="1191:1205" placeholder="SELECT * FRO... book" />
+            <marker date="1488818056711" expanded="true" signature="1191:1211" placeholder="SELECT * FRO... person" />
+            <marker date="1488818056711" expanded="true" signature="1865:1896" placeholder="DELETE FROM " />
+            <marker date="1488818056711" expanded="true" signature="2261:2316" placeholder="UPDATE book " />
+            <marker date="1488818056711" expanded="true" signature="2857:2890" placeholder="SELECT * FRO... book" />
           </folding>
         </state>
       </provider>
@@ -1082,7 +1135,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1241,14 +1296,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/Main.java" />
-    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="406">
@@ -1263,72 +1310,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1785">
-          <caret line="112" column="55" selection-start-line="112" selection-start-column="55" selection-end-line="112" selection-end-column="55" />
-          <folding>
-            <marker date="1487947057783" expanded="true" signature="734:797" placeholder="INSERT INTO book... " />
-            <marker date="1487947057783" expanded="true" signature="1275:1289" placeholder="SELECT * FRO... book" />
-            <marker date="1487947057783" expanded="true" signature="1275:1295" placeholder="SELECT * FRO... person" />
-            <marker date="1487947057783" expanded="true" signature="1919:1950" placeholder="DELETE FROM " />
-            <marker date="1487947057783" expanded="true" signature="2285:2340" placeholder="UPDATE book " />
-            <marker date="1487947057783" expanded="true" signature="2851:2884" placeholder="SELECT * FRO... book" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/EditPhone.jsp" />
-    <entry file="file://$PROJECT_DIR$/WebContent/PersonForm.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/BookForm1.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1377">
-          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/AddPhone.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="79">
-          <caret line="47" column="82" selection-start-line="47" selection-start-column="19" selection-end-line="47" selection-end-column="82" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="122">
-          <caret line="40" column="41" selection-start-line="40" selection-start-column="41" selection-end-line="40" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <marker date="1487986898805" expanded="true" signature="635:682" placeholder="INSERT INTO phone... " />
-            <marker date="1487986898805" expanded="true" signature="1136:1156" placeholder="SELECT * FRO... phone" />
-            <marker date="1487986898805" expanded="true" signature="1136:1157" placeholder="SELECT * FRO... phone" />
-            <marker date="1487986898805" expanded="true" signature="1136:1158" placeholder="SELECT * FRO... phone" />
-            <marker date="1487986898805" expanded="true" signature="1136:1160" placeholder="SELECT * FRO... phone" />
-            <marker date="1487986898805" expanded="true" signature="1691:1721" placeholder="DELETE FROM " />
-            <marker date="1487986898805" expanded="true" signature="2043:2070" placeholder="UPDATE perso... " />
-            <marker date="1487986898805" expanded="true" signature="2488:2520" placeholder="SELECT * FRO... person" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/Phone.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
@@ -1339,25 +1321,106 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/PersonList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="680">
           <caret line="40" column="0" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/EditPerson.jsp">
+    <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="211">
-          <caret line="68" column="0" selection-start-line="68" selection-start-column="0" selection-end-line="68" selection-end-column="0" />
+        <state relative-caret-position="561">
+          <caret line="37" column="53" selection-start-line="37" selection-start-column="53" selection-end-line="37" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="19" column="32" selection-start-line="19" selection-start-column="32" selection-end-line="19" selection-end-column="32" />
+          <folding>
+            <marker date="1488818056711" expanded="true" signature="620:683" placeholder="INSERT INTO book... " />
+            <marker date="1488818056711" expanded="true" signature="1191:1205" placeholder="SELECT * FRO... book" />
+            <marker date="1488818056711" expanded="true" signature="1191:1211" placeholder="SELECT * FRO... person" />
+            <marker date="1488818056711" expanded="true" signature="1865:1896" placeholder="DELETE FROM " />
+            <marker date="1488818056711" expanded="true" signature="2261:2316" placeholder="UPDATE book " />
+            <marker date="1488818056711" expanded="true" signature="2857:2890" placeholder="SELECT * FRO... book" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/BookForm1.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="382">
+          <caret line="81" column="0" selection-start-line="81" selection-start-column="0" selection-end-line="81" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="164">
+          <caret line="13" column="0" selection-start-line="13" selection-start-column="0" selection-end-line="13" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="229">
+          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/PersonForm.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="67" column="58" selection-start-line="67" selection-start-column="58" selection-end-line="67" selection-end-column="58" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/AddPhone.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="54" column="0" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="148" column="38" selection-start-line="148" selection-start-column="38" selection-end-line="148" selection-end-column="38" />
+        <state relative-caret-position="17">
+          <caret line="47" column="0" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/EditPerson.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="63" column="21" selection-start-line="63" selection-start-column="21" selection-end-line="63" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-469">
+          <caret line="97" column="0" selection-start-line="97" selection-start-column="0" selection-end-line="97" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1488827150987" expanded="true" signature="462:509" placeholder="INSERT INTO phone... " />
+            <marker date="1488827150987" expanded="true" signature="958:979" placeholder="SELECT * FRO... phone" />
+            <marker date="1488827150987" expanded="true" signature="1600:1635" placeholder="SELECT * FRO... phone" />
+            <marker date="1488827150987" expanded="true" signature="2229:2259" placeholder="DELETE FROM " />
+            <marker date="1488827150987" expanded="true" signature="2611:2638" placeholder="UPDATE perso... " />
+            <marker date="1488827150987" expanded="true" signature="3086:3118" placeholder="SELECT * FRO... person" />
+          </folding>
         </state>
       </provider>
     </entry>
