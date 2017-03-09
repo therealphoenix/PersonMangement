@@ -8,9 +8,6 @@ public class Phone {
     protected int owner;
     protected String number;
 
-
-    public Phone() {
-    }
     public Phone(int id) {
         this.id = id;
     }
@@ -23,7 +20,7 @@ public class Phone {
     public Phone(int owner, String number) {
         this.owner = owner;
         this.number = number;
-            }
+    }
 
     public int getId() {
         return id;
