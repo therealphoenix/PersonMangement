@@ -6,9 +6,8 @@
     <name>Person Management Application</name>
 </head>
 <body>
-<center>
-    <h1>Person Management</h1>
 
+    <h1>Person Management</h1>
 
 <div align="center">
     <c:if test="${phone != null}">
@@ -38,7 +37,7 @@
                     <tr>
                     <th>Number: </th>
                     <td>
-
+                        <!--Restrict input disallowed  symbols-->
                         <input type="text" name="number" size="50" oninput="checkUserInputPhoneNumber (this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
                                value="<c:out value='${phone.number}' />"
@@ -56,7 +55,7 @@
 
                     </form>
                     <br>
-                    <a href="edit?id=${person.id}">back to person information</a>
+                    <a href="edit?id=${person.id}">Back to person information</a>
                 </td>
                 </tr>
                     </td>

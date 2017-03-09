@@ -67,7 +67,7 @@
             	<td colspan="2" align="center">
             		<input type="submit" value="Add person" />
 					<br>
-					<a href="list">back to person list</a>
+					<a href="list">Back to person list</a>
             	</td>
             </tr>
         </table>
