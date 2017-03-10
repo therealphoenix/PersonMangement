@@ -15,14 +15,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30df8f02-f6b8-41b2-9b8b-8b5509d6d3fa" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/ControllerServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/ControllerServlet.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/JDBCconnector.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/JDBCconnector.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/Person.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/Person.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/PersonDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/PersonDAO.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/Phone.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/Phone.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/PhoneDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/PhoneDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/PersonList.jsp" afterPath="$PROJECT_DIR$/WebContent/PersonList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Person.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Phone.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Phone.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/AddPhone.jsp" afterPath="$PROJECT_DIR$/WebContent/AddPhone.jsp" />
     </list>
     <ignored path="Bookstore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -116,7 +116,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ControllerServlet.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ControllerServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="578">
@@ -146,11 +146,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddPhone.jsp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddPhone.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebContent/AddPhone.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="969">
-              <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
+            <state relative-caret-position="340">
+              <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -213,7 +213,6 @@
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneServlet.java" />
         <option value="$PROJECT_DIR$/WebContent/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/WebContent/AddPhone.jsp" />
         <option value="$PROJECT_DIR$/WebContent/PersonForm.jsp" />
         <option value="$PROJECT_DIR$/WebContent/EditPerson.jsp" />
         <option value="$PROJECT_DIR$/WebContent/PersonList.jsp" />
@@ -223,6 +222,7 @@
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Person.java" />
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java" />
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" />
+        <option value="$PROJECT_DIR$/WebContent/AddPhone.jsp" />
       </list>
     </option>
   </component>
@@ -991,7 +991,7 @@
       <workItem from="1488235946750" duration="2737000" />
       <workItem from="1488812563686" duration="9351000" />
       <workItem from="1488992132612" duration="13913000" />
-      <workItem from="1489069772327" duration="2691000" />
+      <workItem from="1489069772327" duration="4424000" />
     </task>
     <task id="LOCAL-00001" summary="fixed delete redirect">
       <created>1488238721269</created>
@@ -1021,11 +1021,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489057945800</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="jdbc fixed, list fixed,phone number input fixed">
+      <created>1489079419622</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1489079419622</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="113309000" />
+    <option name="totallyTimeSpent" value="115042000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
@@ -1382,14 +1389,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/WebContent/AddPhone.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="969">
-          <caret line="57" column="52" selection-start-line="57" selection-start-column="52" selection-end-line="57" selection-end-column="52" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/PersonForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1173">
@@ -1476,6 +1475,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="578">
           <caret line="138" column="0" selection-start-line="138" selection-start-column="0" selection-end-line="138" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/WebContent/AddPhone.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="47" column="20" selection-start-line="47" selection-start-column="20" selection-end-line="47" selection-end-column="20" />
           <folding />
         </state>
       </provider>

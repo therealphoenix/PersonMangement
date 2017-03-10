@@ -37,8 +37,10 @@
                     <tr>
                     <th>Number: </th>
                     <td>
+                        <!--Checking length size and creating pop-up message-->
                         <!--Restrict input disallowed  symbols-->
-                        <input type="text" name="number" size="50" oninput="checkUserInputPhoneNumber (this)"
+                        <input type="text" name="number" size="50" input pattern=".{2,10}" required title="2 to 50 characters : numbers,-,+,#"
+                               oninput="checkUserInputPhoneNumber (this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
                                value="<c:out value='${phone.number}' />"
                         />
