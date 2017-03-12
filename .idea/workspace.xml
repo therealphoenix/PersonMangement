@@ -13,11 +13,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/JDBCconnector.java" line="11" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="30df8f02-f6b8-41b2-9b8b-8b5509d6d3fa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/ControllerServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/ControllerServlet.class" />
+    <list default="true" id="30df8f02-f6b8-41b2-9b8b-8b5509d6d3fa" name="Default" comment="jdbc fixed, list fixed,phone number input fixed">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/CurrentUser.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Bookstore.iml" afterPath="$PROJECT_DIR$/PersonManagement.iml" />
     </list>
     <ignored path="Bookstore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -93,8 +91,8 @@
       <file leaf-file-name="PhoneDAO.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+            <state relative-caret-position="85">
+              <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
               <folding>
                 <marker date="1489077023288" expanded="true" signature="481:528" placeholder="INSERT INTO phone... " />
                 <marker date="1489077023288" expanded="true" signature="1029:1050" placeholder="SELECT * FRO... phone" />
@@ -866,7 +864,7 @@
       <workItem from="1488812563686" duration="9351000" />
       <workItem from="1488992132612" duration="13913000" />
       <workItem from="1489069772327" duration="4657000" />
-      <workItem from="1489344698154" duration="711000" />
+      <workItem from="1489344698154" duration="1367000" />
     </task>
     <task id="LOCAL-00001" summary="fixed delete redirect">
       <created>1488238721269</created>
@@ -910,11 +908,18 @@
       <option name="project" value="LOCAL" />
       <updated>1489144125867</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="jdbc fixed, list fixed,phone number input fixed">
+      <created>1489345459683</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1489345459683</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="115986000" />
+    <option name="totallyTimeSpent" value="116642000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
@@ -1353,8 +1358,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state relative-caret-position="85">
+          <caret line="13" column="28" selection-start-line="13" selection-start-column="28" selection-end-line="13" selection-end-column="28" />
           <folding>
             <marker date="1489077023288" expanded="true" signature="481:528" placeholder="INSERT INTO phone... " />
             <marker date="1489077023288" expanded="true" signature="1029:1050" placeholder="SELECT * FRO... phone" />
