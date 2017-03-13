@@ -1,7 +1,8 @@
 package com.klindziuk.personmanagement;
 
 /**
- * Created by Hp on 23.02.2017.
+ * This is a model class represents a phone entity
+ *
  */
 public class Phone {
     protected int id;

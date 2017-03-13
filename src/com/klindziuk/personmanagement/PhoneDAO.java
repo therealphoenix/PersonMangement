@@ -8,13 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Created by Hp on 23.02.2017.
+ * PhoneDAO.java
+ * This DAO class provides CRUD database operations for the table phone
+ * in the database.
+ *
  */
 public class PhoneDAO {
-    JDBCconnector connector;
+    DBconnector connector;
 
     public PhoneDAO() {
-        connector = new JDBCconnector();
+        connector = new DBconnector();
     }
 
     public boolean insertPhone(Phone phone, int person_id) throws SQLException {

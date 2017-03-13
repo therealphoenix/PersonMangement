@@ -1,7 +1,5 @@
 package com.klindziuk.personmanagement;
 
-import java.sql.Connection;
-import java.sql.DriverManager;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
@@ -10,17 +8,16 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * AbstractDAO.java
- * This DAO class provides CRUD database operations for the table book
+ * PersonDAO.java
+ * This DAO class provides CRUD database operations for the table person
  * in the database.
  *
- * @author www.codejava.net
  */
 public class PersonDAO {
-    JDBCconnector connector;
+    DBconnector connector;
 
     public PersonDAO() {
-        connector = new JDBCconnector();
+        connector = new DBconnector();
     }
 
     public boolean insertPerson(Person person) throws SQLException {

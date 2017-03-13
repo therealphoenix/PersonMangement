@@ -3,7 +3,6 @@ package com.klindziuk.personmanagement;
 import java.io.IOException;
 import java.sql.SQLException;
 import java.util.List;
-
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -90,7 +89,7 @@ public class ControllerServlet extends HttpServlet {
 
     private void showNewPhoneForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, SQLException {
-        Person existingPerson = personDAO.getPerson(CurrentUser.id());
+        Person existingPerson = personDAO.getPerson(CurrentPerson.id());
         request.setAttribute("person", existingPerson);
         RequestDispatcher dispatcher = request.getRequestDispatcher("AddPhone.jsp");
         dispatcher.forward(request, response);
@@ -98,11 +97,18 @@ public class ControllerServlet extends HttpServlet {
 
     private void showEditForm(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, ServletException, IOException {
-        CurrentUser.setId(Integer.parseInt(request.getParameter("id")));
-        Person existingPerson = personDAO.getPerson(CurrentUser.id());
-        List<Phone> listPersonPhone = phoneDAO.listPersonPhones(CurrentUser.id());
+                CurrentPerson.setId(Integer.parseInt(request.getParameter("id")));
+        Person existingPerson = personDAO.getPerson(CurrentPerson.id());
+        List<Phone> listPersonPhone = phoneDAO.listPersonPhones(CurrentPerson.id());
         request.setAttribute("listPersonPhone", listPersonPhone);
         RequestDispatcher dispatcher = request.getRequestDispatcher("EditPerson.jsp");
+        CurrentPerson.setEditPath(request.getScheme() + "://" +
+                request.getServerName() +
+                ":" +
+                request.getServerPort() +
+                request.getRequestURI() +
+                "?" +
+                request.getQueryString());
         request.setAttribute("person", existingPerson);
         dispatcher.forward(request, response);
     }
@@ -110,8 +116,8 @@ public class ControllerServlet extends HttpServlet {
     private void showEditPhoneForm(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, ServletException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
-        Person existingPerson = personDAO.getPerson(CurrentUser.id());
-        Phone existingPhone = phoneDAO.getPhone(id, CurrentUser.id());
+        Person existingPerson = personDAO.getPerson(CurrentPerson.id());
+        Phone existingPhone = phoneDAO.getPhone(id, CurrentPerson.id());
         RequestDispatcher dispatcher = request.getRequestDispatcher("AddPhone.jsp");
         request.setAttribute("person", existingPerson);
         request.setAttribute("phone", existingPhone);
@@ -131,19 +137,18 @@ public class ControllerServlet extends HttpServlet {
     private void insertPhone(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException {
         String number = request.getParameter("number");
-        Phone newPhone = new Phone(CurrentUser.id(), number);
-        phoneDAO.insertPhone(newPhone, CurrentUser.id());
-        //response.sendRedirect(request.getParameter("from")); ?? have some questions here
-        response.sendRedirect("http://localhost:8081/edit?id=" + CurrentUser.id());
+        Phone newPhone = new Phone(CurrentPerson.id(), number);
+        phoneDAO.insertPhone(newPhone, CurrentPerson.id());
+        response.sendRedirect(CurrentPerson.editPath());
     }
 
     private void updatePerson(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException {
-        CurrentUser.setId(Integer.parseInt(request.getParameter("id")));
+        CurrentPerson.setId(Integer.parseInt(request.getParameter("id")));
         String name = request.getParameter("name");
         String surname = request.getParameter("surname");
         String middlename = request.getParameter("middlename");
-        Person person = new Person(CurrentUser.id(), name, surname, middlename);
+        Person person = new Person(CurrentPerson.id(), name, surname, middlename);
         personDAO.updatePerson(person);
         response.sendRedirect("list");
     }
@@ -152,10 +157,10 @@ public class ControllerServlet extends HttpServlet {
             throws SQLException, IOException {
         int id = Integer.parseInt(request.getParameter("id"));
         String number = request.getParameter("number");
-        Phone phone = new Phone(id, CurrentUser.id(), number);
+        Phone phone = new Phone(id, CurrentPerson.id(), number);
         phoneDAO.updatePhone(phone);
-        response.sendRedirect("http://localhost:8081/edit?id=" + CurrentUser.id());
-        //	response.sendRedirect(request.getParameter("from")); ?? have some questions here
+        response.sendRedirect(CurrentPerson.editPath());
+
     }
 
     private void deletePerson(HttpServletRequest request, HttpServletResponse response)
@@ -171,7 +176,7 @@ public class ControllerServlet extends HttpServlet {
         int id = Integer.parseInt(request.getParameter("id"));
         Phone phone = new Phone(id);
         phoneDAO.deletePhone(phone);
-        response.sendRedirect("http://localhost:8081/edit?id=" + CurrentUser.id());
+        response.sendRedirect(CurrentPerson.editPath());
     }
 
 }

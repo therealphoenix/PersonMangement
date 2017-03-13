@@ -1,13 +1,10 @@
 package com.klindziuk.personmanagement;
 
-import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Phone.java
- * This is a model class represents a book entity
+ * This is a model class represents a person entity
  *
- * @author www.codejava.net
  */
 public class Person {
     protected int id;
