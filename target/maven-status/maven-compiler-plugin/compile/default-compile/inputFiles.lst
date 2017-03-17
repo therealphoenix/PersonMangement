@@ -1,3 +1,7 @@
-D:\Program Files\EclipseEE\BookStore\src\net\codejava\javaee\bookstore\BookDAO.java
-D:\Program Files\EclipseEE\BookStore\src\net\codejava\javaee\bookstore\ControllerServlet.java
-D:\Program Files\EclipseEE\BookStore\src\net\codejava\javaee\bookstore\Book.java
+D:\Program Files\EclipseEE\PersonManagement\src\com\klindziuk\personmanagement\DBconnector.java
+D:\Program Files\EclipseEE\PersonManagement\src\com\klindziuk\personmanagement\PhoneDAO.java
+D:\Program Files\EclipseEE\PersonManagement\src\com\klindziuk\personmanagement\PersonDAO.java
+D:\Program Files\EclipseEE\PersonManagement\src\com\klindziuk\personmanagement\Person.java
+D:\Program Files\EclipseEE\PersonManagement\src\com\klindziuk\personmanagement\ControllerServlet.java
+D:\Program Files\EclipseEE\PersonManagement\src\com\klindziuk\personmanagement\Phone.java
+D:\Program Files\EclipseEE\PersonManagement\src\com\klindziuk\personmanagement\CurrentPerson.java

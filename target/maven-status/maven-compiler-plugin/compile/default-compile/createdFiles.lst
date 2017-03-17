@@ -1,0 +1,7 @@
+com\klindziuk\personmanagement\Person.class
+com\klindziuk\personmanagement\Phone.class
+com\klindziuk\personmanagement\ControllerServlet.class
+com\klindziuk\personmanagement\PersonDAO.class
+com\klindziuk\personmanagement\DBconnector.class
+com\klindziuk\personmanagement\PhoneDAO.class
+com\klindziuk\personmanagement\CurrentPerson.class

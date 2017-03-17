@@ -4,11 +4,12 @@
 
 <html>
 <head>
-    <name>Person Management Application</name>
+
+    <name>Phonebook Application</name>
 </head>
 <body>
 <center>
-    <h1>Person Management</h1>
+    <h1>Phonebook</h1>
     <h2>
         <a href="new">Add New Person</a>
         &nbsp;&nbsp;&nbsp;
@@ -49,6 +50,7 @@
             </tr>
         </c:forEach>
     </table>
+
 </div>
 </body>
 </html>

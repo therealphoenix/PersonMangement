@@ -3,11 +3,11 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
 <html>
 <head>
-    <name>Person Management Application</name>
+    <name>Phonebook Application</name>
 </head>
 <body>
 
-    <h1>Person Management</h1>
+    <h1>Phonebook</h1>
 
 <div align="center">
     <c:if test="${phone != null}">
