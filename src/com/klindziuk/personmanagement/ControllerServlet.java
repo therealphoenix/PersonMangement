@@ -89,14 +89,9 @@ public class ControllerServlet extends HttpServlet {
                     break;
             }
         } catch (SQLException ex) {
-            try{
-               if(DBconnector.jdbcConnection != null)
-                        DBconnector.jdbcConnection.close();
-                }catch(SQLException se){
-                    se.printStackTrace();
-                }
-            }
+            ex.printStackTrace();
         }
+    }
 
     private void listPerson(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {

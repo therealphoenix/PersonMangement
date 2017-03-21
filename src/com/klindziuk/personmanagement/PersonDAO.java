@@ -11,89 +11,148 @@ import java.util.List;
  * PersonDAO.java
  * This DAO class provides CRUD database operations for the table person
  * in the database.
- *
  */
 public class PersonDAO {
     DBconnector connector;
+    PreparedStatement preparedStatement;
+    Statement statement;
+    ResultSet resultSet;
 
     public PersonDAO() {
         connector = new DBconnector();
     }
 
-    public boolean insertPerson(Person person) throws SQLException {
-        String sql = "INSERT INTO person (name, surname, middlename) VALUES (?, ?, ?)";
-        connector.connect();
-        PreparedStatement statement = connector.jdbcConnection.prepareStatement(sql);
-        statement.setString(1, person.getName());
-        statement.setString(2, person.getSurname());
-        statement.setString(3, person.getMiddlename());
-        boolean rowInserted = statement.executeUpdate() > 0;
-        statement.close();
-        connector.disconnect();
+    public boolean insertPerson(Person person) {
+        boolean rowInserted = false;
+        try {
+            String sql = "INSERT INTO person (name, surname, middlename) VALUES (?, ?, ?)";
+            connector.connect();
+            preparedStatement = connector.jdbcConnection.prepareStatement(sql);
+            preparedStatement.setString(1, person.getName());
+            preparedStatement.setString(2, person.getSurname());
+            preparedStatement.setString(3, person.getMiddlename());
+            rowInserted = preparedStatement.executeUpdate() > 0;
+        } catch (SQLException sqlex) {
+            sqlex.printStackTrace();
+
+        } finally {
+            try {
+                preparedStatement.close();
+            } catch (Exception e) { /* ignored */ }
+            try {
+                connector.disconnect();
+            } catch (Exception e) { /* ignored */ }
+        }
         return rowInserted;
     }
 
-    public List<Person> listAllPersons() throws SQLException {
+    public List<Person> listAllPersons() {
         List<Person> listPerson = new ArrayList<>();
-        String sql = "SELECT * FROM person";
-        connector.connect();
-        Statement statement = connector.jdbcConnection.createStatement();
-        ResultSet resultSet = statement.executeQuery(sql);
-        while (resultSet.next()) {
-            int id = resultSet.getInt("id");
-            String name = resultSet.getString("name");
-            String surname = resultSet.getString("surname");
-            String middlename = resultSet.getString("middlename");
-            Person person = new Person(id, name, surname, middlename);
-            listPerson.add(person);
+        try {
+            String sql = "SELECT * FROM person";
+            connector.connect();
+            statement = connector.jdbcConnection.createStatement();
+            resultSet = statement.executeQuery(sql);
+            while (resultSet.next()) {
+                int id = resultSet.getInt("id");
+                String name = resultSet.getString("name");
+                String surname = resultSet.getString("surname");
+                String middlename = resultSet.getString("middlename");
+                Person person = new Person(id, name, surname, middlename);
+                listPerson.add(person);
+            }
+        } catch (SQLException sqlex) {
+            sqlex.printStackTrace();
+
+        } finally {
+            try {
+                resultSet.close();
+            } catch (Exception e) { /* ignored */ }
+            try {
+                statement.close();
+            } catch (Exception e) { /* ignored */ }
+            try {
+                connector.disconnect();
+            } catch (Exception e) { /* ignored */ }
         }
-        resultSet.close();
-        statement.close();
-        connector.disconnect();
         return listPerson;
     }
 
-    public boolean deletePerson(Person person) throws SQLException {
-        String sql = "DELETE FROM person where id = ?";
-        connector.connect();
-        PreparedStatement statement = connector.jdbcConnection.prepareStatement(sql);
-        statement.setInt(1, person.getId());
-        boolean rowDeleted = statement.executeUpdate() > 0;
-        statement.close();
-        connector.disconnect();
+    public boolean deletePerson(Person person) {
+        boolean rowDeleted = false;
+        try {
+            String sql = "DELETE FROM person where id = ?";
+            connector.connect();
+            preparedStatement = connector.jdbcConnection.prepareStatement(sql);
+            preparedStatement.setInt(1, person.getId());
+            rowDeleted = preparedStatement.executeUpdate() > 0;
+        } catch (SQLException sqlex) {
+            sqlex.printStackTrace();
+
+        } finally {
+            try {
+                preparedStatement.close();
+            } catch (Exception e) { /* ignored */ }
+            try {
+                connector.disconnect();
+            } catch (Exception e) { /* ignored */ }
+        }
         return rowDeleted;
     }
 
-    public boolean updatePerson(Person person) throws SQLException {
-        String sql = "UPDATE person SET name = ?, surname = ?, middlename = ?";
-        sql += " WHERE id = ?";
-        connector.connect();
-        PreparedStatement statement = connector.jdbcConnection.prepareStatement(sql);
-        statement.setString(1, person.getName());
-        statement.setString(2, person.getSurname());
-        statement.setString(3, person.getMiddlename());
-        statement.setInt(4, person.getId());
-        boolean rowUpdated = statement.executeUpdate() > 0;
-        statement.close();
-        connector.disconnect();
+    public boolean updatePerson(Person person) {
+        boolean rowUpdated = false;
+        try {
+            String sql = "UPDATE person SET name = ?, surname = ?, middlename = ?";
+            sql += " WHERE id = ?";
+            connector.connect();
+            preparedStatement = connector.jdbcConnection.prepareStatement(sql);
+            preparedStatement.setString(1, person.getName());
+            preparedStatement.setString(2, person.getSurname());
+            preparedStatement.setString(3, person.getMiddlename());
+            preparedStatement.setInt(4, person.getId());
+            rowUpdated = preparedStatement.executeUpdate() > 0;
+        } catch (SQLException sqlex) {
+            sqlex.printStackTrace();
+        } finally {
+
+            try {
+                preparedStatement.close();
+            } catch (Exception e) { /* ignored */ }
+            try {
+                connector.disconnect();
+            } catch (Exception e) { /* ignored */ }
+        }
         return rowUpdated;
     }
 
-    public Person getPerson(int id) throws SQLException {
+    public Person getPerson(int id) {
         Person person = null;
-        String sql = "SELECT * FROM person WHERE id = ?";
-        connector.connect();
-        PreparedStatement statement = connector.jdbcConnection.prepareStatement(sql);
-        statement.setInt(1, id);
-        ResultSet resultSet = statement.executeQuery();
-        if (resultSet.next()) {
-            String name = resultSet.getString("name");
-            String surname = resultSet.getString("surname");
-            String middlename = resultSet.getString("middlename");
-            person = new Person(id, name, surname, middlename);
+        try {
+            String sql = "SELECT * FROM person WHERE id = ?";
+            connector.connect();
+            preparedStatement = connector.jdbcConnection.prepareStatement(sql);
+            preparedStatement.setInt(1, id);
+            resultSet = preparedStatement.executeQuery();
+            if (resultSet.next()) {
+                String name = resultSet.getString("name");
+                String surname = resultSet.getString("surname");
+                String middlename = resultSet.getString("middlename");
+                person = new Person(id, name, surname, middlename);
+            }
+        } catch (SQLException sqlex) {
+            sqlex.printStackTrace();
+        } finally {
+            try {
+                resultSet.close();
+            } catch (Exception e) { /* ignored */ }
+            try {
+                preparedStatement.close();
+            } catch (Exception e) { /* ignored */ }
+            try {
+                connector.disconnect();
+            } catch (Exception e) { /* ignored */ }
         }
-        resultSet.close();
-        statement.close();
         return person;
     }
 }
