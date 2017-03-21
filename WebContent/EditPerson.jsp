@@ -39,6 +39,7 @@
                 <tr>
                     <th>Name: </th>
                     <td>
+                        <!--Restrict input disallowed  symbols-->
                         <input type="text" name="name" size="45"
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
@@ -49,6 +50,7 @@
                 <tr>
                     <th>Surname: </th>
                     <td>
+                        <!--Restrict input disallowed  symbols-->
                         <input type="text" name="surname" size="45"
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
@@ -59,6 +61,7 @@
                 <tr>
                     <th>Middlename: </th>
                     <td>
+                        <!--Restrict input disallowed  symbols-->
                         <input type="text" name="middlename" size="45"
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
@@ -71,11 +74,11 @@
                     <td> <c:forEach var="phone" items="${listPersonPhone}">
                         <c:out value="${phone.number}" />
                         <!--Align hrefs to right-->
-                        <a href="deletePhone?id=<c:out value='${phone.id}' />"style="float:right;margin-right:1%">Delete </a>&nbsp;
-                        <a href="editPhone?id=<c:out value='${phone.id}' />"  style="float:right;margin-right:5%">Edit</a>
+                        <a href="deletephone?id=<c:out value='${phone.id}' />"style="float:right;margin-right:1%">Delete </a>&nbsp;
+                        <a href="editphone?id=<c:out value='${phone.id}' />"  style="float:right;margin-right:5%">Edit</a>
                         <br>
                 </c:forEach>
-                          <a href="newPhone">Add phone</a>
+                          <a href="newphone">Add phone</a>
                     </td>
                 </tr>
                     <td colspan="2" align="center">
@@ -90,10 +93,12 @@
 <script>
     function checkUserInput (object)
     {
-        if (this.ST) return; var overPlace = object.value;
+        if (this.ST) return;
+        var overPlace = object.value;
         var overLoad = overPlace.replace (/^[а-яА-ЯёЁa-zA-Z]+$/, '').length; this.ST = true;
         if (overLoad > 0) {
-            object.value = object.lang; showError (object); return
+            object.value = object.lang; showError (object);
+            return
         }
         object.lang = object.value; this.ST = null;
     }
@@ -102,11 +107,14 @@
     {
         if (!this.OBJ)
         {
-            this.OBJ = object; object.style.backgroundColor = 'pink'; this.TIM = setTimeout (showError, 200)}
+            this.OBJ = object; object.style.backgroundColor = 'pink';
+            this.TIM = setTimeout (showError, 200)}
         else
         {
-            this.OBJ.style.backgroundColor = ''; clearTimeout (this.TIM); this.ST = null;
-            checkUserInputPhoneNumber (this.OBJ); this.OBJ = null
+            this.OBJ.style.backgroundColor = '';
+            clearTimeout (this.TIM); this.ST = null;
+            checkUserInputPhoneNumber (this.OBJ);
+            this.OBJ = null
         }
     }
 </script>

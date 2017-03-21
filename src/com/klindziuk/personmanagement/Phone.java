@@ -14,13 +14,13 @@ public class Phone {
     }
 
     public Phone(int id, int owner, String number) {
-        this(owner, number);
-        this.id = id;
+        this(id);
+        this.owner = owner;
+        this.number = number;
     }
 
     public Phone(int owner, String number) {
-        this.owner = owner;
-        this.number = number;
+        this(-99999,owner,number);
     }
 
     public int getId() {

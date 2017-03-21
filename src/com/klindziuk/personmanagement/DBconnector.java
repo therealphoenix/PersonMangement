@@ -7,7 +7,7 @@ public class DBconnector {
     private static final String URL ="jdbc:mysql://localhost:3306/phonebook";
     private static final  String USERNAME = "root";
     private static final  String PASSWORD = "root";
-    protected java.sql.Connection jdbcConnection;
+    protected static java.sql.Connection jdbcConnection;
 
     protected void connect() throws SQLException {
         if (jdbcConnection == null || jdbcConnection.isClosed()) {

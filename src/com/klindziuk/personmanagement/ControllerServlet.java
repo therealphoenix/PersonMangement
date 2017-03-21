@@ -11,6 +11,17 @@ import javax.servlet.http.HttpServletResponse;
 
 public class ControllerServlet extends HttpServlet {
 
+    public static final String NEW_PERSON = "/new";
+    public static final String INSERT_PERSON = "/insert";
+    public static final String NEW_PHONE = "/newphone";
+    public static final String INSERT_PHONE = "/insertphone";
+    public static final String UPDATE_PERSON = "/update";
+    public static final String UPDATE_PHONE = "/updatephone";
+    public static final String EDIT_PERSON = "/edit";
+    public static final String EDIT_PHONE = "/editphone";
+    public static final String DELETE_PERSON = "/delete";
+    public static final String DELETE_PHONE = "/deletephone";
+
     private PersonDAO personDAO;
     private PhoneDAO phoneDAO;
 
@@ -32,34 +43,34 @@ public class ControllerServlet extends HttpServlet {
 
         try {
             switch (action) {
-                case "/new":
+                case NEW_PERSON:
                     showNewForm(request, response);
                     break;
-                case "/insert":
+                case INSERT_PERSON:
                     insertPerson(request, response);
                     break;
-                case "/newPhone":
+                case NEW_PHONE:
                     showNewPhoneForm(request, response);
                     break;
-                case "/insertPhone":
+                case INSERT_PHONE:
                     insertPhone(request, response);
                     break;
-                case "/updatePhone":
+                case UPDATE_PHONE:
                     updatePhone(request, response);
                     break;
-                case "/editPhone":
+                case EDIT_PHONE:
                     showEditPhoneForm(request, response);
                     break;
-                case "/delete":
+                case DELETE_PERSON:
                     deletePerson(request, response);
                     break;
-                case "/deletePhone":
+                case DELETE_PHONE:
                     deletePhone(request, response);
                     break;
-                case "/edit":
+                case EDIT_PERSON:
                     showEditForm(request, response);
                     break;
-                case "/update":
+                case UPDATE_PERSON:
                     updatePerson(request, response);
                     break;
                 default:
@@ -67,9 +78,15 @@ public class ControllerServlet extends HttpServlet {
                     break;
             }
         } catch (SQLException ex) {
-            throw new ServletException(ex);
+            try{
+               if(DBconnector.jdbcConnection != null)
+                        DBconnector.jdbcConnection.close();
+                }catch(SQLException se){
+                    se.printStackTrace();
+                }
+            }
         }
-    }
+
 
     private void listPerson(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {

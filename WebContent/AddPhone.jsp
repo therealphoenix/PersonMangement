@@ -11,10 +11,10 @@
 
 <div align="center">
     <c:if test="${phone != null}">
-    <form action="updatePhone" method="post">
+    <form action="updatephone" method="post">
         </c:if>
         <c:if test="${phone == null}">
-        <form action="insertPhone" method="post">
+        <form action="insertphone" method="post">
             </c:if>
             <table border="1" cellpadding="5">
                 <caption>
@@ -39,10 +39,10 @@
                     <td>
                         <!--Checking length size and creating pop-up message-->
                         <!--Restrict input disallowed  symbols-->
-                        <input type="text" name="number" size="50" input pattern=".{2,10}" required title="2 to 50 characters : numbers,-,+,#"
-                               oninput="checkUserInputPhoneNumber (this)"
-                               onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
-                               value="<c:out value='${phone.number}' />"
+                        <input type="text" name="number" size="50" input pattern=".{2,50}" required title="2 to 50 characters : numbers,-,+,#"
+                        oninput="checkUserInputPhoneNumber (this)"
+                        onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
+                        value="<c:out value='${phone.number}' />"
                         />
                     </td>
                 <tr>
@@ -65,27 +65,27 @@
             </table>
         </form>
 </div>
-
-
-    <script>
+ <script>
         function checkUserInputPhoneNumber (object)
         {
             if (this.ST) return; var overPlace = object.value;
-            var overLoad = overPlace.replace (/^[- +#]*[0-9][- +#0-9]*/, '').length; this.ST = true;
+            var overLoad = overPlace.replace (/^[- +#]*[- +#0-9][- +#0-9]*/, '').length; this.ST = true;
             if (overLoad > 0) {
                 object.value = object.lang; showError (object); return
             }
             object.lang = object.value; this.ST = null;
         }
-
         function showError (object)
         {
             if (!this.OBJ)
             {
-                this.OBJ = object; object.style.backgroundColor = 'pink'; this.TIM = setTimeout (showError, 200)}
+                this.OBJ = object;
+                object.style.backgroundColor = 'pink';
+                this.TIM = setTimeout (showError, 200)}
             else
             {
-                this.OBJ.style.backgroundColor = ''; clearTimeout (this.TIM); this.ST = null;
+                this.OBJ.style.backgroundColor = '';
+                clearTimeout (this.TIM); this.ST = null;
                 checkUserInputPhoneNumber (this.OBJ); this.OBJ = null
             }
         }

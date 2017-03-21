@@ -21,14 +21,14 @@ public class Person {
     }
 
     public Person(int id, String name, String surname, String middlename) {
-        this(name, surname, middlename);
-        this.id = id;
-    }
-
-    public Person(String name, String surname, String middlename) {
+        this(id);
         this.name = name;
         this.surname = surname;
         this.middlename = middlename;
+    }
+
+    public Person(String name, String surname, String middlename) {
+        this(-99999, name, surname, middlename);
     }
 
     public int getId() {
