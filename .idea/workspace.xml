@@ -8,27 +8,24 @@
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" line="0" />
     <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" line="15" />
-    <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" line="25" />
-    <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" line="198" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" line="36" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" line="207" />
     <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/DBconnector.java" line="8" />
-    <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" line="150" />
-    <bookmark url="file://$PROJECT_DIR$/WebContent/PersonList.jsp" line="24" />
-    <bookmark url="file://$PROJECT_DIR$/WebContent/PersonList.jsp" line="18" />
+    <bookmark url="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" line="160" />
+    <bookmark url="file://$PROJECT_DIR$/WebContent/PersonList.jsp" line="25" />
+    <bookmark url="file://$PROJECT_DIR$/WebContent/PersonList.jsp" line="17" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30df8f02-f6b8-41b2-9b8b-8b5509d6d3fa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/ControllerServlet.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/ControllerServlet.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/PersonDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/PersonDAO.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/PhoneDAO.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/PhoneDAO.class" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/ControllerServlet.class" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/Person.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/Person.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/Phone.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/Phone.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/AddPhone.jsp" afterPath="$PROJECT_DIR$/WebContent/AddPhone.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/EditPerson.jsp" afterPath="$PROJECT_DIR$/WebContent/EditPerson.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/PersonForm.jsp" afterPath="$PROJECT_DIR$/WebContent/PersonForm.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/PersonList.jsp" afterPath="$PROJECT_DIR$/WebContent/PersonList.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/DBconnector.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/DBconnector.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Person.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Phone.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Phone.java" />
     </list>
     <ignored path="Bookstore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -84,8 +81,8 @@
       <file leaf-file-name="ControllerServlet.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="80" column="12" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
+            <state relative-caret-position="17">
+              <caret line="176" column="51" selection-start-line="176" selection-start-column="51" selection-end-line="176" selection-end-column="51" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -135,8 +132,8 @@
       <file leaf-file-name="AddPhone.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/WebContent/AddPhone.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="629">
-              <caret line="71" column="60" selection-start-line="71" selection-start-column="60" selection-end-line="71" selection-end-column="60" />
+            <state relative-caret-position="102">
+              <caret line="49" column="41" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="41" />
               <folding />
             </state>
           </provider>
@@ -157,8 +154,8 @@
       <file leaf-file-name="PersonList.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/PersonList.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="765">
-              <caret line="185" column="7" selection-start-line="185" selection-start-column="7" selection-end-line="185" selection-end-column="7" />
+            <state relative-caret-position="2159">
+              <caret line="181" column="100" selection-start-line="181" selection-start-column="100" selection-end-line="181" selection-end-column="100" />
               <folding />
             </state>
           </provider>
@@ -167,8 +164,8 @@
       <file leaf-file-name="PersonForm.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/PersonForm.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="228">
-              <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+            <state relative-caret-position="1632">
+              <caret line="96" column="13" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -177,8 +174,8 @@
       <file leaf-file-name="EditPerson.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/WebContent/EditPerson.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1683">
-              <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+            <state relative-caret-position="85">
+              <caret line="83" column="38" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -227,12 +224,12 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" />
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/DBconnector.java" />
-        <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" />
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Person.java" />
         <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Phone.java" />
-        <option value="$PROJECT_DIR$/WebContent/PersonForm.jsp" />
         <option value="$PROJECT_DIR$/WebContent/EditPerson.jsp" />
+        <option value="$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java" />
         <option value="$PROJECT_DIR$/WebContent/PersonList.jsp" />
+        <option value="$PROJECT_DIR$/WebContent/PersonForm.jsp" />
         <option value="$PROJECT_DIR$/WebContent/AddPhone.jsp" />
       </list>
     </option>
@@ -899,7 +896,7 @@
       <workItem from="1489434843674" duration="4628000" />
       <workItem from="1489749788745" duration="16477000" />
       <workItem from="1489309463941" duration="8407000" />
-      <workItem from="1490084553634" duration="5306000" />
+      <workItem from="1490084553634" duration="17874000" />
     </task>
     <task id="LOCAL-00001" summary="fixed delete redirect">
       <created>1488238721269</created>
@@ -978,11 +975,18 @@
       <option name="project" value="LOCAL" />
       <updated>1490013821588</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="jdbc fixed, list fixed,phone number input fixed">
+      <created>1490089992663</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1490089992663</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="151656000" />
+    <option name="totallyTimeSpent" value="164224000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
@@ -1002,15 +1006,15 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21975498" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19831547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32982457" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1352,16 +1356,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="80" column="12" selection-start-line="80" selection-start-column="12" selection-end-line="80" selection-end-column="12" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -1397,34 +1391,44 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/com/klindziuk/personmanagement/ControllerServlet.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="176" column="51" selection-start-line="176" selection-start-column="51" selection-end-line="176" selection-end-column="51" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/PersonList.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="765">
-          <caret line="185" column="7" selection-start-line="185" selection-start-column="7" selection-end-line="185" selection-end-column="7" />
+        <state relative-caret-position="2159">
+          <caret line="181" column="100" selection-start-line="181" selection-start-column="100" selection-end-line="181" selection-end-column="100" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/PersonForm.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="228">
-          <caret line="113" column="13" selection-start-line="113" selection-start-column="13" selection-end-line="113" selection-end-column="13" />
+        <state relative-caret-position="1632">
+          <caret line="96" column="13" selection-start-line="96" selection-start-column="13" selection-end-line="96" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/EditPerson.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1683">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
+        <state relative-caret-position="85">
+          <caret line="83" column="38" selection-start-line="83" selection-start-column="24" selection-end-line="83" selection-end-column="38" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/WebContent/AddPhone.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="71" column="60" selection-start-line="71" selection-start-column="60" selection-end-line="71" selection-end-column="60" />
+        <state relative-caret-position="102">
+          <caret line="49" column="41" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="41" />
           <folding />
         </state>
       </provider>

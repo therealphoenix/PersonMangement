@@ -4,7 +4,6 @@
 
 <html>
 <head>
-
     <!-- Bootstrap -->
     <link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
 
@@ -20,12 +19,11 @@
 <center>
     <div class = "jumbotron">
     <div class = "container">
-
+    <div align = "left">
+        <span class = "label label-info">TAT</span>
             <h2>Phonebook Application</h2>
-            <p>
-                <br>
-                <a class = "btn btn-primary btn-lg" role = "button" onclick="window.location.href='new'">Add Person</a>
-            </p>
+
+        </div>
         </div>
         </div>
 
@@ -49,7 +47,7 @@
                 <td class = "active"><c:out value="${person.name}"/></td>
                 <td class = "active"><c:out value="${person.surname}"/></td>
                 <td class = "active"><c:out value="${person.middlename}"/></td>
-                <td class = "danger"><c:forEach var="phone" items="${listPhone}">
+                <td class = "warning"><c:forEach var="phone" items="${listPhone}">
                     <c:if test="${phone.owner == person.id}">
                         <c:out value="${phone.number}"/> <br>
                     </c:if>
@@ -57,7 +55,7 @@
                 </c:forEach>
                 </td>
                 <td>
-                    <button type = "button" class = "btn btn-info" onclick="window.location.href='edit?id=<c:out value='${person.id}' />'">Edit</button>
+                    <button type = "button" class = "btn btn-success" onclick="window.location.href='edit?id=<c:out value='${person.id}' />'">Edit</button>
                     &nbsp;&nbsp;&nbsp;&nbsp;
                     <button type = "button" class = "btn btn-danger" onclick="window.location.href='delete?id=<c:out value='${person.id}' />'">Delete</button>
 
@@ -65,6 +63,8 @@
             </tr>
         </c:forEach>
     </table>
+
+    <a class = "btn btn-info btn-lg" role = "button" onclick="window.location.href='new'">Add Person</a>
 </div>
 <div class="col-md-12 text-center">
     <ul class="pagination pagination-lg pager" id="myPager"></ul>
@@ -179,7 +179,7 @@
 
 $(document).ready(function(){
 
-    $('#myTable').pageMe({pagerSelector:'#myPager',showPrevNext:true,hidePageNumbers:false,perPage:4});
+    $('#myTable').pageMe({pagerSelector:'#myPager',showPrevNext:true,hidePageNumbers:false,perPage:5});
 
 });</script>
     </div>

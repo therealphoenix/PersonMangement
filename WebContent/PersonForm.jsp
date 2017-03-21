@@ -89,7 +89,7 @@
 		{
 			if (this.ST) return;
 			var overPlace = object.value;
-			var overLoad = overPlace.replace (/^[а-яА-ЯёЁa-zA-Z]+$/, '').length; this.ST = true;
+			var overLoad = overPlace.replace (/^[a-zA-Z0-9а-яА-Я_-]*$/, '').length; this.ST = true;
 			if (overLoad > 0) {
 				object.value = object.lang;
 				showError (object);
