@@ -48,14 +48,22 @@
                 </c:if>
                 <tr>
                     <th bgcolor="#F2F3F4" colspan="2" align="left"><br>&nbsp  Phone number owner : <c:out value="${person.name}" />
+
                         <c:out value="${person.surname}" />
-                        <c:out value="${person.middlename}" /> </th>
+                        <c:out value="${person.middlename}" />
+                        <br>
+                        <br>
+                    </th>
+
                     <tr>
                     <th bgcolor="#76D7C4">&nbsp Number:&nbsp </th>
                     <td>
                         <!--Checking length size and creating pop-up message-->
                         <!--Restrict input disallowed  symbols-->
-                        <input type="text" name="number" size="45" input pattern=".{2,50}" required title="2 to 50 characters : numbers,-,+,#"
+                            <form class = "bs-example bs-example-form" role = "form">
+                                <div class = "input-group input-group-lg">
+                                <input type = "text" name="number" size="45" input pattern=".{2,50}" required title="2 to 50 characters : numbers,-,+,#"
+                                 class = "form-control" placeholder = "Phonenumber"
                         oninput="checkUserInputPhoneNumber (this)"
                         onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
                         value="<c:out value='${phone.number}' />"

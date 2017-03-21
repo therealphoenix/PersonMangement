@@ -54,7 +54,7 @@
                         <input type="text" name="name" size="45"
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
-                               value="&nbsp <c:out value='${person.name}' />"
+                               value=" <c:out value='${person.name}' />"
                         />
                     </td>
                 </tr>
@@ -65,7 +65,7 @@
                         <input type="text" name="surname" size="45"
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
-                               value="&nbsp <c:out value='${person.surname}' />"
+                               value=" <c:out value='${person.surname}' />"
                         />
                     </td>
                 </tr>
@@ -76,7 +76,7 @@
                         <input type="text" name="middlename" size="45"
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
-                               value="&nbsp <c:out value='${person.middlename}' />"
+                               value=" <c:out value='${person.middlename}' />"
                         />
                     </td>
                 </tr>
@@ -101,7 +101,11 @@
                     <td colspan="2" align="center">
                         <input type="submit" button type = "submit" class = "btn btn-primary btn-lg" value="Save Person" id = "save"/>
                         <br>
-                        <button type = "button" class = "btn btn-link" onclick="window.location.href='list'">Back to person list</button>
+                        <button type = "button" class = "btn btn-link" onclick="window.location.href='list'">
+                            <span class = "glyphicon glyphicon-user"></span>
+                            Back to person list
+
+                        </button>
 
                     </td>
                 </tr>
@@ -113,7 +117,7 @@
     {
         if (this.ST) return;
         var overPlace = object.value;
-        var overLoad = overPlace.replace (/^[а-яА-ЯёЁa-zA-Z]+$/, '').length; this.ST = true;
+        var overLoad = overPlace.replace (/^[a-zA-Z0-9а-яА-Я_-]*$/, '').length; this.ST = true;
         if (overLoad > 0) {
             object.value = object.lang; showError (object);
             return
