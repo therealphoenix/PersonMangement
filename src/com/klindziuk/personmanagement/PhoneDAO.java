@@ -13,10 +13,10 @@ import java.util.List;
  * in the database.
  */
 public class PhoneDAO {
-    DBconnector connector;
-    PreparedStatement preparedStatement;
-    Statement statement;
-    ResultSet resultSet;
+   private DBconnector connector;
+   private PreparedStatement preparedStatement;
+   private Statement statement;
+   private ResultSet resultSet;
 
     public PhoneDAO() {
         connector = new DBconnector();

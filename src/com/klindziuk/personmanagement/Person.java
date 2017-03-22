@@ -13,9 +13,6 @@ public class Person {
     protected String middlename;
     protected List<Phone> phoneList;
 
-    public Person() {
-    }
-
     public Person(int id) {
         this.id = id;
     }
@@ -28,7 +25,7 @@ public class Person {
     }
 
     public Person(String name, String surname, String middlename) {
-        this(-99999, name, surname, middlename);
+        this(0, name, surname, middlename);
     }
 
     public int getId() {

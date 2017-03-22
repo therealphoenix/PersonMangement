@@ -13,10 +13,10 @@ import java.util.List;
  * in the database.
  */
 public class PersonDAO {
-    DBconnector connector;
-    PreparedStatement preparedStatement;
-    Statement statement;
-    ResultSet resultSet;
+  private  DBconnector connector;
+  private  PreparedStatement preparedStatement;
+  private  Statement statement;
+  private  ResultSet resultSet;
 
     public PersonDAO() {
         connector = new DBconnector();
@@ -115,7 +115,6 @@ public class PersonDAO {
         } catch (SQLException sqlex) {
             sqlex.printStackTrace();
         } finally {
-
             try {
                 preparedStatement.close();
             } catch (Exception e) { /* ignored */ }

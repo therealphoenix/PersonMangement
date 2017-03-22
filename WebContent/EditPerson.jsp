@@ -1,27 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
          pageEncoding="UTF-8"%>
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %>
+<script type="text/javascript">
+    <%@include file="js/checkLineInput.js"%>
+</script>
 <html>
 <head>
     <!-- Bootstrap -->
     <link href = "//maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" rel = "stylesheet">
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-
-    <!--[if lt IE 9]>
     <script src = "https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
     <script src = "https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
-
-</head>
+  </head>
 <body>
-
     <div class = "panel panel-default">
         <div class = "panel-heading">
             <span class = "label label-info">TAT</span>
             <h1>Phonebook application</h1>
-
         </div>
     </div>
 
@@ -32,7 +26,6 @@
         <c:if test="${person == null}">
         <form action="insert" method="post">
             </c:if>
-
             <table class = "table" >
                 <caption>
                     <h3>
@@ -50,8 +43,9 @@
                 <tr>
                     <th class="active">&nbsp Name: </th>
                     <td class="active">
+                        <!--Checking length size and creating pop-up message-->
                         <!--Restrict input disallowed  symbols-->
-                        <input type="text" name="name" size="45"
+                        <input type="text" name="name" size="45" pattern=".{1,150}" required title="1 to 150 characters : [ letters, numbers, -, _ ]"
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
                                value=" <c:out value='${person.name}' />"
@@ -61,8 +55,9 @@
                 <tr>
                     <th class="active">&nbsp Surname: </th>
                     <td class="active">
+                        <!--Checking length size and creating pop-up message-->
                         <!--Restrict input disallowed  symbols-->
-                        <input type="text" name="surname" size="45"
+                        <input type="text" name="surname" size="45" pattern=".{1,150}" required title="1 to 150 characters : [ letters, numbers, -, _ ]"
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
                                value=" <c:out value='${person.surname}' />"
@@ -72,8 +67,9 @@
                 <tr>
                     <th class="active">&nbsp Middlename: </th>
                     <td class="active">
+                        <!--Checking length size and creating pop-up message-->
                         <!--Restrict input disallowed  symbols-->
-                        <input type="text" name="middlename" size="45"
+                        <input type="text" name="middlename" size="45" pattern=".{0,150}" required title="up to 150 characters : [ letters, numbers, -, _ ]"
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
                                value=" <c:out value='${person.middlename}' />"
@@ -85,7 +81,6 @@
                     <td class="active"> <c:forEach var="phone" items="${listPersonPhone}">
                         <c:out value=" ${phone.number}" />
                         <!--Align hrefs to right-->
-
                         <button type = "button"
                                 class = "btn btn-warning" onclick="window.location.href='deletephone?id=<c:out value='${phone.id}' />'"
                                 style="float:right;margin-right:43%" >Delete</button>
@@ -104,7 +99,6 @@
                         <button type = "button" class = "btn btn-link" onclick="window.location.href='list'">
                             <span class = "glyphicon glyphicon-user"></span>
                             Back to person list
-
                         </button>
 
                     </td>
@@ -112,33 +106,5 @@
             </table>
         </form>
 </div>
-<script>
-    function checkUserInput (object)
-    {
-        if (this.ST) return;
-        var overPlace = object.value;
-        var overLoad = overPlace.replace (/^[a-zA-Z0-9а-яА-Я_-]*$/, '').length; this.ST = true;
-        if (overLoad > 0) {
-            object.value = object.lang; showError (object);
-            return
-        }
-        object.lang = object.value; this.ST = null;
-    }
-
-    function showError (object)
-    {
-        if (!this.OBJ)
-        {
-            this.OBJ = object; object.style.backgroundColor = 'pink';
-            this.TIM = setTimeout (showError, 200)}
-        else
-        {
-            this.OBJ.style.backgroundColor = '';
-            clearTimeout (this.TIM); this.ST = null;
-            checkUserInputPhoneNumber (this.OBJ);
-            this.OBJ = null
-        }
-    }
-</script>
 </body>
 </html>

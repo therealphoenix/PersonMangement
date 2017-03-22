@@ -20,7 +20,7 @@ public class Phone {
     }
 
     public Phone(int owner, String number) {
-        this(-99999,owner,number);
+        this(0,owner,number);
     }
 
     public int getId() {
