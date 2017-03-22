@@ -17,17 +17,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="30df8f02-f6b8-41b2-9b8b-8b5509d6d3fa" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/Person.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/Person.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/Phone.class" afterPath="$PROJECT_DIR$/target/classes/com/klindziuk/personmanagement/Phone.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/js/checkLineInput.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/WebContent/js/checkPhoneInputScript.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/AddPhone.jsp" afterPath="$PROJECT_DIR$/WebContent/AddPhone.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/EditPerson.jsp" afterPath="$PROJECT_DIR$/WebContent/EditPerson.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/PersonForm.jsp" afterPath="$PROJECT_DIR$/WebContent/PersonForm.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/WebContent/PersonList.jsp" afterPath="$PROJECT_DIR$/WebContent/PersonList.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Person.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PersonDAO.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Phone.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/Phone.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java" afterPath="$PROJECT_DIR$/src/com/klindziuk/personmanagement/PhoneDAO.java" />
     </list>
     <ignored path="Bookstore.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -904,7 +896,7 @@
       <workItem from="1489749788745" duration="16477000" />
       <workItem from="1489309463941" duration="8407000" />
       <workItem from="1490084553634" duration="25440000" />
-      <workItem from="1490133274444" duration="7549000" />
+      <workItem from="1490133274444" duration="7636000" />
     </task>
     <task id="LOCAL-00001" summary="fixed delete redirect">
       <created>1488238721269</created>
@@ -1011,15 +1003,22 @@
       <option name="project" value="LOCAL" />
       <updated>1490133537577</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="jdbc fixed, list fixed,phone number input fixed">
+      <created>1490212760782</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1490212760784</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="179339000" />
+    <option name="totallyTimeSpent" value="179426000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="728" extended-state="0" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1035,7 +1034,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19831547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19831547" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
