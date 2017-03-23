@@ -19,7 +19,7 @@ public class PhoneDAO {
    private ResultSet resultSet;
 
     public PhoneDAO() {
-        connector = new DBconnector();
+        connector =  DBconnector.getInstance();
     }
 
     public boolean insertPhone(Phone phone, int person_id) throws SQLException {

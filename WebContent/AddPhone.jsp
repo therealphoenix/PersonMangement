@@ -52,7 +52,7 @@
                 <tr>
                     <th bgcolor="#76D7C4">&nbsp Number:&nbsp</th>
                     <td>
-                        form class = "bs-example bs-example-form" role = "form">
+                       <div form class = "bs-example bs-example-form" role = "form">
                         <div class="input-group input-group-lg">
                             <!--Checking length size and creating pop-up message-->
                             <!--Restrict input disallowed  symbols-->

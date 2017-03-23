@@ -19,7 +19,7 @@ public class PersonDAO {
   private  ResultSet resultSet;
 
     public PersonDAO() {
-        connector = new DBconnector();
+        connector = DBconnector.getInstance();
     }
 
     public boolean insertPerson(Person person) {
