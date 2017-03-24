@@ -1,6 +1,8 @@
 package com.klindziuk.personmanagement;
 
-
+/**
+ * This class provides current active person for CRUD operations. 
+ */
 public class CurrentPerson {
     public static int id = 0;
     public static String editPath = "";

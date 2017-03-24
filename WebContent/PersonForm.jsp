@@ -44,7 +44,7 @@
                     <td class="active">
                         <!--Checking length size and creating pop-up message-->
                         <!--Restrict input disallowed  symbols-->
-                        <input type="text" name="name" size="45" pattern=".{1,150}" required
+                        <input type="text" name="name" size="45"  required
                                title="1 to 150 characters : [ letters, numbers, -, _ ]"
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
@@ -59,7 +59,6 @@
                         <!--Restrict input disallowed  symbols-->
                         <input type="text" name="surname" size="45" pattern=".{1,150}" required
                                title="1 to 150 characters : [ letters, numbers, -, _ ]"
-
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
                                value="&nbsp <c:out value='${person.surname}' />"
@@ -71,7 +70,7 @@
                     <td class="active">
                         <!--Checking length size and creating pop-up message-->
                         <!--Restrict input disallowed  symbols-->
-                        <input type="text" name="middlename" size="45" pattern=".{0,150}" required
+                        <input type="text" name="middlename" size="45" pattern=".{,150}" required
                                title="up to 150 characters : [ letters, numbers, -, _ ]"
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"

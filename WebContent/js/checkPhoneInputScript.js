@@ -1,6 +1,3 @@
-/**
- * Created by Hp on 22.03.2017.
- */
 function checkUserInputPhoneNumber (object)
 {
     if (this.ST) return; var overPlace = object.value;

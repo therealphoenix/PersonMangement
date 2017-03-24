@@ -1,4 +1,10 @@
-package com.klindziuk.personmanagement;
+package com.klindziuk.personmanagement.web;
+
+import com.klindziuk.personmanagement.CurrentPerson;
+import com.klindziuk.personmanagement.entity.Person;
+import com.klindziuk.personmanagement.entity.Phone;
+import com.klindziuk.personmanagement.DAO.PersonDAO;
+import com.klindziuk.personmanagement.DAO.PhoneDAO;
 
 import java.io.IOException;
 import java.sql.SQLException;
@@ -92,7 +98,7 @@ public class ControllerServlet extends HttpServlet {
             ex.printStackTrace();
         }
     }
-
+        //get full list of persons with phone numbers
     private void listPerson(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException, ServletException {
         List<Phone> listPhone = phoneDAO.listAllPhones();
@@ -103,12 +109,13 @@ public class ControllerServlet extends HttpServlet {
         dispatcher.forward(request, response);
     }
 
+	//show form for adding new person
     private void showNewForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         RequestDispatcher dispatcher = request.getRequestDispatcher("PersonForm.jsp");
         dispatcher.forward(request, response);
     }
-
+ 	//show form for adding new phone numbers
     private void showNewPhoneForm(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, SQLException {
         Person existingPerson = personDAO.getPerson(CurrentPerson.id());
@@ -116,7 +123,7 @@ public class ControllerServlet extends HttpServlet {
         RequestDispatcher dispatcher = request.getRequestDispatcher("AddPhone.jsp");
         dispatcher.forward(request, response);
     }
-
+       //show form for editing person and phone numbers of current person
     private void showEditForm(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, ServletException, IOException {
                 CurrentPerson.setId(Integer.parseInt(request.getParameter(ID)));
@@ -134,7 +141,7 @@ public class ControllerServlet extends HttpServlet {
         request.setAttribute(PERSON, existingPerson);
         dispatcher.forward(request, response);
     }
-
+       //show form for editing phone number
     private void showEditPhoneForm(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, ServletException, IOException {
         int id = Integer.parseInt(request.getParameter(ID));
@@ -145,7 +152,7 @@ public class ControllerServlet extends HttpServlet {
         request.setAttribute(PHONE, existingPhone);
         dispatcher.forward(request, response);
     }
-
+       //add person to database
     private void insertPerson(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException {
         String name = request.getParameter(NAME);
@@ -155,7 +162,7 @@ public class ControllerServlet extends HttpServlet {
         personDAO.insertPerson(newPerson);
         response.sendRedirect(LIST);
     }
-
+       
     private void insertPhone(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException {
         String number = request.getParameter(NUMBER);
@@ -163,7 +170,7 @@ public class ControllerServlet extends HttpServlet {
         phoneDAO.insertPhone(newPhone, CurrentPerson.id());
         response.sendRedirect(CurrentPerson.editPath());
     }
-
+       
     private void updatePerson(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException {
         CurrentPerson.setId(Integer.parseInt(request.getParameter(ID)));
@@ -174,7 +181,7 @@ public class ControllerServlet extends HttpServlet {
         personDAO.updatePerson(person);
         response.sendRedirect(LIST);
     }
-
+      
     private void updatePhone(HttpServletRequest request, HttpServletResponse response)
             throws SQLException, IOException {
         int id = Integer.parseInt(request.getParameter(ID));

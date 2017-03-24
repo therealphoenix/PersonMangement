@@ -1,14 +1,18 @@
-package com.klindziuk.personmanagement;
+package com.klindziuk.personmanagement.util;
 
+import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
+/**
+ * This class provides connection to database.
+ */
 public class DBconnector {
     private static final String URL ="jdbc:mysql://localhost:3306/phonebook";
     private static final  String USERNAME = "root";
     private static final  String PASSWORD = "root";
     private static DBconnector instance = null;
-    protected  java.sql.Connection jdbcConnection;
+    public Connection jdbcConnection;
 
     public static DBconnector getInstance()
     {
@@ -20,7 +24,7 @@ public class DBconnector {
         return instance;
     }
 
-    protected void connect() throws SQLException {
+    public void connect() throws SQLException {
         if (jdbcConnection == null || jdbcConnection.isClosed()) {
             try {
                 Class.forName("com.mysql.jdbc.Driver");
@@ -32,7 +36,7 @@ public class DBconnector {
         }
     }
 
-    protected void disconnect() throws SQLException {
+    public void disconnect() throws SQLException {
         if (jdbcConnection != null && !jdbcConnection.isClosed()) {
             jdbcConnection.close();
         }

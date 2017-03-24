@@ -8,7 +8,7 @@
 
     <servlet>
         <servlet-name>ControllerServlet</servlet-name>
-        <servlet-class>com.klindziuk.personmanagement.ControllerServlet</servlet-class>
+        <servlet-class>com.klindziuk.personmanagement.web.ControllerServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>

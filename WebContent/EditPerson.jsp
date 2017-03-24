@@ -69,10 +69,11 @@
                     <td class="active">
                         <!--Checking length size and creating pop-up message-->
                         <!--Restrict input disallowed  symbols-->
-                        <input type="text" name="middlename" size="45" pattern=".{0,150}" required title="up to 150 characters : [ letters, numbers, -, _ ]"
+                        <input type="text" name="middlename" size="45" pattern=".{,150}" required
+                               title="up to 150 characters : [ letters, numbers, -, _ ]"
                                oninput="checkUserInput(this)"
                                onpropertychange="if ('v' == '\v' && parseFloat (navigator.userAgent.split ('MSIE ') [1].split (';') [0]) <= 9) Ftest (this)"
-                               value=" <c:out value='${person.middlename}' />"
+                               value="&nbsp <c:out value='${person.middlename}' />"
                         />
                     </td>
                 </tr>

@@ -1,7 +1,9 @@
-package com.klindziuk.personmanagement;
+package com.klindziuk.personmanagement.entity;
+
+import java.util.List;
 
 /**
- * This is a model class represents a phone entity
+ * This class represents a phone entity
  *
  */
 public class Phone {
@@ -46,6 +48,6 @@ public class Phone {
     public void setNumber(String number) {
         this.number = number;
     }
+
+
 }
-
-
